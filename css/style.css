@@ -1,0 +1,1100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+.btn {
+    font-family: "Open Sans", arial;
+    font-weight: 700;
+    padding: 15px 28px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* ///////////// ------- Start Navbar Section -------  /////////////  */
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+nav .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+}
+
+nav .list .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .list .list-item ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .list .list-item ul li {
+    list-style-type: none;
+}
+
+nav .list .list-item ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ///////////// -------  End Navbar Section -------  /////////////  */
+
+/* ///////////// -------  Start Main Section -------  /////////////  */
+
+main .bgLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main .bgLayer .caption {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main .bgLayer .caption h1 {
+    font-size: 76px !important;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+main .bgLayer .caption p {
+    font-size: 22px !important;
+    color: white;
+    margin: 18px 0;
+    padding: 0 30px;
+    line-height: 1.86em;
+}
+
+main .bgLayer .caption button.btn1 {
+    background-color: #4274b7;
+}
+
+main .bgLayer .caption button.btn1:hover {
+    background-color: #fff;
+    color: black;
+}
+
+main .bgLayer .caption button.btn2 {
+    background-color: #fff;
+    color: black;
+}
+
+main .bgLayer .caption button.btn2:hover {
+    background-color: rgba(255, 255, 255, 0.815);
+    color: black;
+}
+
+main .bgLayer .circle .point {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 35%;
+    animation: scrollPoint 3s linear infinite;
+}
+
+@keyframes scrollPoint {
+    0% {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(18px);
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(36px);
+    }
+}
+
+/* ///////////// -------  End Main Section -------  /////////////  */
+
+
+/* ///////////// -------  Start Solutions Section -------  /////////////  */
+
+#solutions {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+#solutions .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#solutions .items .item {
+    max-width: calc(95%/ 3);
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#solutions .items .item i {
+    padding-right: 10px;
+    font-size: 2rem;
+    color: gray;
+}
+
+#solutions .items .item .item-desc h5 {
+    margin-bottom: 7px;
+    color: #303030;
+    font-size: 17px;
+}
+
+#solutions .items .item .item-desc p {
+    font-size: 15px;
+    color: #888;
+    line-height: 30px;
+}
+
+/* ///////////// -------  End Solutions Section -------  /////////////  */
+
+/* ///////////// -------  Start About 1 Section -------  /////////////  */
+
+#about {
+    background-color: #f8f8f9;
+    padding: 70px 0;
+}
+
+#about .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .items .who-image {
+    width: 45%;
+}
+
+#about .items .who-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#about .items .items-desc {
+    width: 50%;
+}
+
+#about .items .items-desc h3 {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #303030;
+    line-height: 1.38em;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+#about .items .items-desc p {
+    font-size: 15px;
+    line-height: 1.86em;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+    color: #888;
+
+}
+
+#about .items .items-desc .check-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#about .items .items-desc .check-desc i {
+    margin-right: 10px;
+    color: #4274b7;
+}
+
+#about .items .items-desc .desc-btn {
+    background-color: #4274b7;
+    transition: all .5s;
+}
+
+#about .items .items-desc .desc-btn:hover {
+    background-color: black;
+}
+
+/* ///////////// -------  End About 1 Section -------  /////////////  */
+
+
+/* ///////////// -------  Start About 2 Section -------  /////////////  */
+
+#about2 {
+    background-color: #fff;
+    padding: 70px 0;
+}
+
+#about2 .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about2 .items .who-image {
+    width: 50%;
+}
+
+#about2 .items .who-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#about2 .items .items-desc {
+    width: 45%;
+}
+
+#about2 .items .items-desc h3 {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #303030;
+    line-height: 1.38em;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+#about2 .items .items-desc p {
+    font-size: 15px;
+    line-height: 1.86em;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+    color: #888;
+}
+
+#about2 .items .items-desc .check-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#about2 .items .items-desc .check-desc i {
+    margin-right: 10px;
+    color: #4274b7;
+}
+
+#about2 .items .items-desc .desc-btn {
+    background-color: #4274b7;
+    transition: all .5s;
+}
+
+#about2 .items .items-desc .desc-btn:hover {
+    background-color: black;
+}
+
+/* ///////////// -------  End About 2 Section -------  /////////////  */
+
+
+
+/* ///////////// -------  Start News Section -------  /////////////  */
+
+#news {
+    height: 500px;
+    width: 100%;
+    background-image: url("../images/business-main.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+#news .layer {
+    background-color: #3c70afd5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+#news .layer .news-caption .far {
+    font-size: 2.5rem;
+}
+
+#news .layer .news-caption p {
+    width: 90%;
+    line-height: 40px;
+    font-size: 1.5rem;
+    margin: 40px auto;
+}
+
+#news .layer .news-caption span {
+    display: block;
+    margin: 10px;
+}
+
+#news .layer .news-caption span:first-of-type {
+    font-size: 18px;
+}
+
+#news .layer .news-caption span:last-of-type {
+    font-size: 14px;
+    color: #f8f8f9;
+    opacity: .7;
+}
+
+#news .layer .news-caption .arrow {
+    margin-top: 30px;
+
+}
+
+#news .layer .news-caption .arrow i {
+    padding: 10px;
+    border: 2px solid #f8f8f9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s;
+    opacity: .7;
+}
+
+#news .layer .news-caption .arrow i:hover {
+    background-color: black;
+    border: 2px solid black;
+}
+
+/* ///////////// -------  End News Section -------  /////////////  */
+
+
+
+/* ///////////// -------  Start Services  Section -------  /////////////  */
+
+#services {
+    padding: 90px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#services .items-imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .items-imgs .layer {
+    flex: 30%;
+    max-width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#services .items-imgs .layer img {
+    width: 90%;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+#services .items-imgs .layer:hover img {
+    opacity: 1;
+}
+
+/* ///////////// -------  End Services  Section -------  /////////////  */
+
+
+
+/* ///////////// -------  Start Price Section -------  /////////////  */
+
+
+#price {
+    padding: 50px 0;
+}
+
+#price .text-caption {
+    text-align: center;
+}
+
+#price .text-caption h2 {
+    padding: 20px 0;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.5em;
+}
+
+#price .text-caption p {
+    padding: 20px 0;
+    font-size: 20px;
+    font-style: normal;
+    color: rgba(0, 0, 0, .5);
+}
+
+#price .text-caption .price-btn {
+    background-color: #4274b7;
+    transition: background-color .2s;
+}
+
+#price .text-caption .price-btn:hover {
+
+    background-color: #303030;
+}
+
+/* ///////////// -------  End Price Section -------  /////////////  */
+
+
+
+/* ///////////// -------  End Footer Section -------  /////////////  */
+
+footer {
+    padding: 15px 0;
+    background-color: #121B25;
+}
+
+footer .items {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .items .copy-righter {
+    color: #58606b;
+}
+
+footer .items .copy-righter p {
+    color: #58606b;
+    font-size: 14px;
+}
+
+footer .items .icons i {
+    margin: 0 5px;
+    color: rgb(41, 38, 38);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: background-color .2s;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+footer .items .icons i:hover {
+    color: blue;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+/* ///////////// -------  End Footer Section -------  /////////////  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================  Media Query =====================================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        height: 120vh;
+        background-image: url("../images/business-main.jpg");
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav .list .logo {
+        height: 30px;
+    }
+
+    nav .list .list-item {
+        width: 65%;
+        font-size: 14px;
+    }
+
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    main .bgLayer .caption button.btn1,
+    main .bgLayer .caption button.btn2 {
+        margin-top: 50px;
+    }
+
+    #about .items {
+        width: 100%;
+        display: block;
+    }
+
+    #about .items .items-desc {
+        width: 100%;
+    }
+
+    #about .items .who-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #about .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about2 .items {
+        width: 100%;
+        display: block;
+
+    }
+
+    #about2 .items .items-desc {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    #about2 .items {
+        width: 100%;
+
+    }
+
+    #about2 .items .who-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #about2 .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #solutions .items .item {
+        max-width: 100%;
+    }
+
+
+    #services .items-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #services .items-imgs .layer {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    #services .items-imgs .layer img {
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .items {
+        display: block;
+        text-align: center;
+    }
+
+
+    footer .items .icons {
+        margin: 15px 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main {
+        width: 100%;
+        height: 120vh;
+        background-image: url("../images/business-main.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav .list .logo {
+        height: 28px;
+    }
+
+    nav .list .list-item {
+        width: 55%;
+        font-size: 14px;
+    }
+
+    #about .items {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    #about .items .items-desc {
+        width: 100%;
+    }
+
+    #about .items .who-image {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #about .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about2 .items {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    #about2 .items .items-desc {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #about2 .items {
+        width: 90%;
+    }
+
+    #about2 .items .who-image {
+        width: 95%;
+    }
+
+    #about2 .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #solutions {
+        width: 90%;
+        margin: auto;
+    }
+
+    #solutions .items {
+        max-width: 100%;
+    }
+
+    #solutions .items .item {
+        max-width: 100%;
+    }
+
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    main .bgLayer .caption button.btn1,
+    main .bgLayer .caption button.btn2 {
+        margin-top: 50px;
+    }
+
+
+    #services .items-imgs {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #services .items-imgs .layer {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 40px;
+    }
+
+    #services .items-imgs .layer img {
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .items {
+        display: block;
+        text-align: center;
+    }
+
+    footer .items .icons {
+        margin: 15px 0;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        width: 100%;
+        height: 110vh;
+        background-image: url("../images/business-main.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav .list .logo {
+        height: 30px;
+    }
+
+    nav .list .list-item {
+        width: 45%;
+    }
+
+    #about .items .items-desc {
+        width: 90%;
+    }
+
+    #about .items .who-image {
+        width: 90%;
+    }
+
+    #about .items .who-image img {
+        width: 100%;
+    }
+
+    #about2 .items .items-desc {
+        width: 90%;
+    }
+
+    #about2 .items .who-image {
+        width: 90%;
+    }
+
+    #about2 .items .who-image img {
+        width: 100%;
+    }
+
+    #solutions .items .item {
+        max-width: 40%;
+    }
+
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    main .bgLayer .caption button.btn1,
+    main .bgLayer .caption button.btn2 {
+        margin-top: 50px;
+    }
+
+    #services .items-imgs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #services .items-imgs .layer {
+        max-width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    #services .items-imgs .layer img {
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .items {
+        display: flex;
+    }
+
+    footer .items .copy-righter {
+        margin: 15px 0;
+    }
+
+    footer .items .icons {
+        margin: 15px 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        width: 100%;
+        height: 120vh;
+        background-image: url("../images/business-main.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+    nav .list .logo {
+        height: 30px;
+    }
+
+    nav .list .list-item {
+        width: 40%;
+    }
+
+
+    #about .items {
+        width: 100%;
+        display: flex;
+    }
+
+    #about .items .items-desc {
+        width: 40%;
+    }
+
+    #about .items .who-image {
+        width: 50%;
+    }
+
+    #about .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about2 .items {
+        width: 100%;
+    }
+
+    #about2 .items .items-desc {
+        width: 50%;
+    }
+
+    #about2 .items {
+        width: 100%;
+        display: flex;
+    }
+
+    #about2 .items .who-image {
+        width: 40%;
+    }
+
+    #about2 .items .who-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #solutions .items .item {
+        max-width: 40%;
+    }
+
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    main .bgLayer .caption button.btn1,
+    main .bgLayer .caption button.btn2 {
+        margin-top: 50px;
+    }
+
+    #services .items-imgs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #services .items-imgs .layer {
+        flex: 15%;
+        max-width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    #services .items-imgs .layer img {
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    footer .items {
+        display: flex;
+    }
+
+    footer .items .copy-righter {
+        margin: 15px 0;
+    }
+
+    footer .items .icons {
+        margin: 15px 0;
+    }
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        width: 100%;
+        height: 130vh;
+        background-image: url("../images/business-main.jpg");
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav .list .logo {
+        height: 35px;
+    }
+
+    nav .list .list-item {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    main .bgLayer .circle {
+        width: 35px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+}
